@@ -19,6 +19,12 @@ bld/
 
 # Roslyn cache directories
 *.ide/
+.vs/
+
+# NuGet
+*.lock.json
+*.nuget.props
+*.nuget.targets
 
 # MSTest test Results
 [Tt]est[Rr]esult*/

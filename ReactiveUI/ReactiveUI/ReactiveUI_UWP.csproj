@@ -32,13 +32,13 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\UWP\</OutputPath>
-    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <None Include="project.json" />
+    <None Include="ReactiveUI_UWP.project.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\CommonAssemblyInfo.cs">
@@ -106,7 +106,7 @@
     <Compile Include="Xaml\WinRTAppDataDriver.cs" />
     <Compile Include="Xaml\WinRTAutoSuspendApplication.cs" />
     <Compile Include="Xaml\XamlDefaultPropertyBinding.cs" />
-    <Content Include="Properties\ReactiveUI_UWP.rd.xml" />
+    <EmbeddedResource Include="Properties\ReactiveUI_UWP.rd.xml" />
     <Content Include="VariadicTemplates.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>VariadicTemplates.cs</LastGenOutput>

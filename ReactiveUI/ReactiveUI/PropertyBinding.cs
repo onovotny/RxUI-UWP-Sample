@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reactive;
@@ -937,6 +938,8 @@ namespace ReactiveUI
             Func<TValue> fallbackValue = null)
         {
             var setter = Reflection.GetValueSetterOrThrow(viewExpression.GetMemberInfo());
+            var mi = viewExpression.GetMemberInfo();
+            Debug.WriteLine($"Type = {mi.DeclaringType}, Name = {mi.Name}");
             if (viewExpression.GetParent().NodeType == ExpressionType.Parameter) { 
                 return This.Subscribe(
                     x => setter(target, x, viewExpression.GetArgumentsArray()),

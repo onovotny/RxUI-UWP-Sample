@@ -1,1 +1,8 @@
-<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata" />
+<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">
+  <Library Name="ReactiveUI">
+    <Namespace Name="Windows.UI.Xaml.Controls">
+      <Type Name="TextBlock" Dynamic="Required Public" />
+      <Type Name="TextBox" Dynamic="Required Public" />
+    </Namespace>
+  </Library>
+</Directives>

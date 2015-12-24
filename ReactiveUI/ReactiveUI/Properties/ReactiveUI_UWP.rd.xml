@@ -1,5 +1,11 @@
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">
   <Library Name="ReactiveUI">
+    <!--<Assembly Name="System.Reactive.Core" Dynamic="Required All" />
+    <Assembly Name="System.Reactive.Interfaces" Dynamic="Required All" />
+    <Assembly Name="System.Reactive.Linq" Dynamic="Required All" />
+    <Assembly Name="System.Reactive.PlatformServices" Dynamic="Required All" />
+    <Assembly Name="System.Reactive.Windows.Threading" Dynamic="Required All" />
+    <Assembly Name="System.Reactive.WindowsRuntime" Dynamic="Required All" />-->
     <Namespace Name="Windows.UI.Xaml.Controls">
       <Type Name="TextBlock" Dynamic="Required Public" />
       <Type Name="TextBox" Dynamic="Required Public" />
